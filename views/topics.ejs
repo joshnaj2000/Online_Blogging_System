@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose Your Topics</title>
+  
+   <link rel="stylesheet" href="/topics.css">
+</head>
+<body>
+
+  <h1>Choose Your Topics</h1>
+
+
+  <form action="/topics" method="post">
+
+  <ul class="topic-list" id="topicList">
+    <li class="topic-item">
+      <input type="checkbox" class="topic-checkbox" value="technology"> Technology
+    </li>
+    <li class="topic-item">
+        <input type="checkbox" class="topic-checkbox" value="sports"> Sports
+      </li>
+      <li class="topic-item">
+        <input type="checkbox" class="topic-checkbox" value="Science"> Science
+      </li>
+      <li class="topic-item">
+        <input type="checkbox" class="topic-checkbox" value="Health"> Health
+      </li>
+      <li class="topic-item">
+        <input type="checkbox" class="topic-checkbox" value="wellness"> wellness
+      </li>
+      <li class="topic-item">
+        <input type="checkbox" class="topic-checkbox" value="Travel"> Travel
+      </li>
+      <li class="topic-item">
+        <input type="checkbox" class="topic-checkbox" value="Food and Cooking"> Food and Cooking
+      </li>
+      <li class="topic-item">
+        <input type="checkbox" class="topic-checkbox" value="Fashion"> Fashion
+      </li>
+      <li class="topic-item">
+        <input type="checkbox" class="topic-checkbox" value="Arts and Culture"> Arts and Culture
+      </li>
+      <li class="topic-item">
+        <input type="checkbox" class="topic-checkbox" value="Business"> Business
+      </li>
+      <li class="topic-item">
+        <input type="checkbox" class="topic-checkbox" value="Finance"> Finance
+      </li>
+      <li class="topic-item">
+        <input type="checkbox" class="topic-checkbox" value="Education"> Education
+      </li>
+      <li class="topic-item">
+        <input type="checkbox" class="topic-checkbox" value="News & current events"> News & current events
+      </li>
+      <li class="topic-item">
+        <input type="checkbox" class="topic-checkbox" value="Hobbies"> Hobbies
+      </li>
+      <li class="topic-item">
+        <input type="checkbox" class="topic-checkbox" value="story"> story
+      </li>
+      <li class="topic-item">
+        <input type="checkbox" class="topic-checkbox" value="parenting and family"> parenting and family
+      </li>
+      <li class="topic-item">
+        <input type="checkbox" class="topic-checkbox" value="personal development"> personal development
+      </li>
+      <li class="topic-item">
+        <input type="checkbox" class="topic-checkbox" value="Environment and Sustainability"> Environment and Sustainability
+      </li>
+      <li class="topic-item">
+        <input type="checkbox" class="topic-checkbox" value="History and Culture"> History and Culture
+      </li>
+      <li class="topic-item">
+        <input type="checkbox" class="topic-checkbox" value="Humor and Entertainment"> Humor and Entertainment
+      </li>
+      <li class="topic-item">
+        <input type="checkbox" class="topic-checkbox" value="Environment and Sustainability"> Environment and Sustainability
+      </li>
+  </ul>
+  <button type="submit" class="button button-block">Submit</button>
+  </form>
+  <!-- <button onclick="submitTopics()">Submit</button> -->
+
+  <!-- <script>
+    function submitTopics() {
+      const selectedTopics = Array.from(document.querySelectorAll('.topic-checkbox:checked'))
+        .map(checkbox => checkbox.value);
+
+      // In a real application, you would send the selected topics to the server for processing or storage.
+      // For now, let's just log them to the console.
+      console.log('Selected Topics:', selectedTopics);
+    }
+  </script> -->
+
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/signup.css">
+</head>
+<body>
+    <div class="form">
+        <div class="tab-content">
+          <div id="signup-form">   
+            <h1>Sign Up for Free</h1>
+            
+            <form action="/submit-signup" method="post">
+              <div class="top-row">
+                <div class="field-wrap">
+                  <label>
+                    First Name<span class="req">*</span>
+                  </label>
+                  <input type="text" name="firstName" required autocomplete="off" />
+                </div>
+          
+                <div class="field-wrap">
+                  <label>
+                    Last Name<span class="req">*</span>
+                  </label>
+                  <input type="text" name="lastName" required autocomplete="off"/>
+                </div>
+              </div>
+    
+              <div class="field-wrap">
+                <label>
+                  Email Address<span class="req">*</span>
+                </label>
+                <input type="email" name="email" required autocomplete="off"/>
+              </div>
+            
+              <div class="field-wrap">
+                <label>
+                  Set A Password<span class="req">*</span>
+                </label>
+                <input type="password" name="password" required autocomplete="off"/>
+              </div>
+            
+              <button type="submit" class="button button-block">Get Started</button>
+            </form>
+
+            <!-- Move script tag outside the form -->
+            <!-- <script src="topics.js"></script>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
+ --> 

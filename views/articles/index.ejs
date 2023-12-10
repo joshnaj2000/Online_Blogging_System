@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/home.css">
+
+  <title>Blog</title>
+</head>
+<body>
+  <div class="jumbotron text-center">
+    <h1>BLOG VISTA</h1>
+    <p>EXPRESS YOURSELF....</p> 
+  </div>
+  <div class="container">
+
+    <a href="/profile" class="btn btn-info">Profile</a>
+
+    <h1 class="mb-4">Blog Articles</h1>
+    <a href="/articles/new" class="btn btn-success">New Article</a>
+
+    <% articles.forEach(article => { %>
+      <div class="card mt-4">
+        <div class="card-body">
+          <h4 class="card-title"><%= article.title %></h4>
+          <div class="card-subtitle text-muted mb-2">
+            <%= article.createdAt.toLocaleDateString() %>
+          </div>
+          <div class="card-text mb-2"><%= article.description %></div>
+          <a href="articles/<%= article.slug %>" class="btn btn-primary">Read More</a>
+          <a href="articles/edit/<%= article.id %>" class="btn btn-edit">Edit</a>
+          <form action="/articles<%= article.id %>?_method=DELETE" method="POST" class="d-inline">
+            <button type="submit" class="btn btn-danger">Delete</button>
+          </form>
+          <form action="/articles/like/<%= article.id %>" method="POST" class="d-inline">
+            <button type="submit" class="btn btn-like">Like</button>
+        </form>
+          <span><%= article.likes %> Likes</span>
+        </div>
+      </div>  
+    <% }) %>
+  </div>
+</body>
+</html>

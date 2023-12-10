@@ -1,0 +1,75 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+<body>
+    
+    <h1>State your thoughts.........</h1>
+
+    <form>
+        <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                Title<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" />
+            </div>
+        
+
+            <div class="top-row">
+                <div class="field-wrap">
+                  <label>
+                    context<span class="req">*</span>
+                  </label>
+                  <input type="text" required autocomplete="off" />
+                </div>
+
+                <div class="top-row">
+                    <div class="field-wrap">
+                      <label>
+                        Blog<span class="req">*</span>
+                      </label>
+                      <input type="text" required autocomplete="off" />
+                    </div>
+    </form>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="/blogging.css">
+</head>
+<body>
+    <h1>State your thoughts.........</h1>
+
+    <form>
+        <div class="top-row">
+            <div class="field-wrap">
+                <label for="title">Title<span class="req">*</span></label>
+                <input type="text" id="title" name="title" required autocomplete="off" />
+            </div>
+
+            <div class="field-wrap">
+                <label for="context">Context<span class="req">*</span></label>
+                <input type="text" id="context" name="context" required autocomplete="off" />
+            </div>
+        </div>
+
+        <div class="field-wrap">
+            <label for="blog">Blog<span class="req">*</span></label>
+            <textarea id="blog" name="blog" rows="8" required></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
